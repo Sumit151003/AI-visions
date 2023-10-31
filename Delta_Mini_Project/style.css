@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.main_box {
+    height: 100vh;
+    background-image: url(photo.jpg);
+    background-size: cover;
+    font-family: 'Exo', sans-serif;
+}
+
+.btn_one i{
+    position: absolute;
+    left: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.sidebar_menu {
+    position: fixed;
+    left: -300px;
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 4px rgb(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+}
+
+.sidebar_menu .logo {
+    line-height: 60px;
+    box-shadow: 0px 0px 4px rgb(255, 255, 255, 0.5);
+}
+
+.sidebar_menu .logo a {
+    padding-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.btn_two i{
+    color: grey;
+    position: absolute;
+    left: 223px;
+    top: 20px;
+    font-size: 23px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.sidebar_menu .menu {
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+}
+
+
+.sidebar_menu .menu li{
+    padding: 17px 27px;
+    list-style: none;
+}
+
+.sidebar_menu .menu a , i {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar_menu .menu i {
+    padding-right: 5px;
+}
+
+.sidebar_menu .social_media {
+    position: absolute;
+    bottom: 30px;
+    left: 85px;
+}
+
+.sidebar_menu .social_media i {
+   color: #fff;
+   opacity: 0.5;
+}
+
+.sidebar_menu .menu li:hover {
+    box-shadow: 0px 0px 4px rgb(255, 255, 255, 0.5);
+}
+
+.sidebar_menu .social_media i:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.btn_one i:hover {
+    font-size: 40px;
+}
+
+.btn_two i:hover {
+    font-size: 26px;
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .btn_one i {
+    opacity: 0;
+}
+
+#thought {
+    font-family: 'Foldit', cursive;
+    font-family: 'Caveat', cursive;
+    color: #fff;
+    position: absolute;
+    top: 50px;
+    left: 260px;
+    font-size: 30px;
+    width: 200px;
+    line-height: 60px;
+    text-align: center;
+}
+
+#thought span {
+    color: cyan;
+    position: relative;
+    left: 120px;
+    bottom: 30px;
+}
